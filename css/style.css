@@ -176,7 +176,7 @@ border: none;
 }
 .service-image{
     width: 50%;
-    background-image: url(/image/replace\ image1.png);
+    background-image: url(../image/replace\ image1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 65vh;
@@ -226,7 +226,7 @@ border: none;
     line-height: 1.5;
 }
 .milestone{
-    background-image: url("/image/replace\ image1\ \(1\).png");
+    background-image: url("../image/replace\ image1\ \(1\).png");
     width: 100%;
     background-size: 100% 100%;
     margin-top: 9%;
