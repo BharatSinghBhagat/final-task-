@@ -200,6 +200,10 @@ i.fas.fa-angle-left {
     justify-content: center;
     align-items: center;
 }
+.template-circle-icon  img{
+    width: 60%;
+    height: 60%;
+}
 .template-card-content{
  text-align: center; 
 }
@@ -783,13 +787,13 @@ font-family: 'Ubuntu Mono', sans-serif;
     }
     .template-card {
     width: 45%;
-    height: 30vh;
+    height: 29vh;
     }
     .template-card-content h4 {
         font-size: 3.2vw;
     }
     .template-card-content p {
-        padding: 16% 0% 0% 0%;
+        padding: 5% 0% 0% 0%;
         font-size: 2.5vw;
         line-height: 3vw;
     }
@@ -807,8 +811,9 @@ font-family: 'Ubuntu Mono', sans-serif;
     }
     .service-content {
         height: 36vh;
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 0%;
+        margin-top: 5%;
         justify-content: space-around; 
     }
     .service-content-field {
@@ -824,7 +829,6 @@ font-family: 'Ubuntu Mono', sans-serif;
         border-radius: 50%;
         width: 9%;
         background-color: #2d3e50;
-       
         justify-content: center;
         align-items: center;
     }
@@ -834,16 +838,21 @@ font-family: 'Ubuntu Mono', sans-serif;
         text-align: center;
     }
     .service-contnet-field-content h4 {
-        font-size: 3vw;
-        line-height: 1.5vh;
+        font-size: 2.8vw;
+        line-height: 0.5vh;
     }
     .service-contnet-field-content p {
         font-size: 2vw;
         letter-spacing: 0.5px;
+        line-height: 2;
     }
     .service-content-field strong {
         font-size: 5.7vw;
     }
+    .milestone {
+        margin-top: 5%;
+    }
+
     .milestone-content {
         width: 25%;
         height: 10vh;
@@ -885,9 +894,13 @@ font-family: 'Ubuntu Mono', sans-serif;
         justify-content: center;
         align-items: center;
     }
+    .card-icon img{
+            width: 4vh;
+            height: 4vh;
+    }
     .card-content {
-        width: 60%;
-        border: 1px solid;
+        width: 70%;
+        /* border: 1px solid; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -898,8 +911,11 @@ font-family: 'Ubuntu Mono', sans-serif;
         width: 60%;
     }
 
+    .card-content h4 {
+        font-size: 2.7vw;
+    }
     .card-content p {
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         line-height: 1.7;
 }
     .gallery-content {
@@ -928,6 +944,9 @@ font-family: 'Ubuntu Mono', sans-serif;
    .gallery-slider a {
         font-size: 2.5vw;
     }
+    .gallery-content h3 {
+        font-size: 4.5vw;
+    }    
     .gallery-card img {
         height: 20vh;
         width: 35%;
@@ -971,7 +990,7 @@ font-family: 'Ubuntu Mono', sans-serif;
     }
     .client-testimonial-content {
         width: 90%;
-        margin-left: 5%;
+        
     }
     .client-testimonial {
         height: 56vh;
@@ -990,6 +1009,12 @@ font-family: 'Ubuntu Mono', sans-serif;
     .john-img {
         margin-left: 0px;
         width: 50%;
+    }
+    .john-img img{
+        width: 80%;
+    }
+    .client-name h3{
+        font-size: 2.95vw;
     }
     .client-name > p {
         font-size: 2vw;
@@ -1025,7 +1050,7 @@ font-family: 'Ubuntu Mono', sans-serif;
         font-size: 13px;
     }
     .footer {
-        height: 40vh;
+        height: 60vh;
     }
     .footer-content {
         width: 80%;
@@ -1043,6 +1068,18 @@ font-family: 'Ubuntu Mono', sans-serif;
         font-weight: 200;
     }
     ::placeholder{
-        font-size:2vw;
+        font-size:1.5vw;
+    }
+    .email-button {
+        margin-top: -10.5%;
+        display: flex;
+        width: 60%;
+        margin-left: 15%;
+        height: 4vh;
+        justify-content: flex-end;
+    }
+    .email-button button {
+        padding: 2% 6% 2% 6%;
+        font-size: 1.5vw;
     }
 }
