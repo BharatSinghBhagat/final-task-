@@ -619,15 +619,15 @@ align-items: baseline;
 .news-card-content h4{
     color: white;
     padding: 7% 0% 0% 9%;
-    font-size: 19px;
+    font-size: 1.03vw;
     font-family: 'Proxima Nova', sans-serif;
     font-weight: bold;
 }
 .news-card-content > p{
     color: white;
     padding: 5% 0% 0% 9%;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 0.91vw;
+    line-height: 3vh;
     font-family: 'Ubuntu Mono', sans-serif;
 }
 .read-more-section{
@@ -637,7 +637,7 @@ align-items: baseline;
     width: 80%;
     margin-top: 10%;
     margin-left: 10%;
-    font-size: 17px;
+    font-size: 1.03vw;
 }
 .footer{
     margin-top: 10%;
