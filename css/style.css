@@ -390,17 +390,16 @@ align-items: baseline;
 }
 .gallery-slider{
     display: flex;
-    /* border: 1px solid; */
     justify-content: space-around;
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
     margin-top: 5%;
+    font-size: 1vw;
     
 }
 .gallery-slider a{
     color: black;
     text-decoration: none;
-    font-family: fangsong;
     font-weight:bold;
     font-family: 'Ubuntu Mono', sans-serif;
 }
