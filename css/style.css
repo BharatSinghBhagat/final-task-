@@ -342,7 +342,7 @@ align-items: baseline;
 .offer-card{
     display: flex;
     /* border:1px solid; */
-    width: 30%;
+    width: 31%;
     justify-content: space-between;
 }
 .card-icon{
