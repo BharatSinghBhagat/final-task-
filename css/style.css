@@ -103,7 +103,14 @@ align-items: baseline;
 }
 .construction-free-psd-btn{
     /* border: 1px solid; */
+   
     width: 20%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+i.fas.fa-angle-left {
+    margin-top: 60%;
 }
 .construction-free-psd-content h2 {
     font-size: 3.9vw;
@@ -762,6 +769,7 @@ font-family: 'Ubuntu Mono', sans-serif;
     }
     .welcome-template-content p {
         font-size: 2.5vw;
+        line-height: 2vh;
     }
     .welcome-template-content h3 {
         font-size: 5.3vw;
