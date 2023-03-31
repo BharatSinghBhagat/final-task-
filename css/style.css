@@ -346,7 +346,7 @@ align-items: baseline;
     justify-content: space-between;
 }
 .card-icon{
-    width: 19%;
+    width: 17%;
 }
 .card-content{
     /* border:1px solid; */
@@ -853,7 +853,7 @@ font-family: 'Ubuntu Mono', sans-serif;
         width: 45%;
     }
     .card-icon {
-        width: 30%;
+            width: 17%;
         display: flex;
         justify-content: center;
         align-items: center;
