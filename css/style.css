@@ -36,6 +36,16 @@ header{
  text-align: right;
 }
 
+.dropdown {
+    display:none;
+}
+.fa {
+ color:#ffc000;
+ margin-top: 68%;
+}
+
+
+
 /* H E A D E R -- C S S */
 
 .navbar{
@@ -102,15 +112,9 @@ align-items: baseline;
     color: white;
 }
 .construction-free-psd-btn{
-    /* border: 1px solid; */
-   
     width: 20%;
-    border: 1px solid;
     display: flex;
     justify-content: center;
-}
-i.fas.fa-angle-left {
-    margin-top: 60%;
 }
 .construction-free-psd-content h2 {
     font-size: 3.9vw;
@@ -721,7 +725,52 @@ font-family: 'Ubuntu Mono', sans-serif;
 
 
 
-@media screen and (min-device-width: 375px)and (max-device-width:667px){
+@media screen and (min-width: 375px)and (max-width:667px){
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+
+
+
+
+
+
     .header-contact-info {
         width: 100%;
         margin-left: 0%
@@ -821,7 +870,6 @@ font-family: 'Ubuntu Mono', sans-serif;
         padding: 0%;
         flex-direction: column;
         flex-wrap: wrap;
-      
         align-items: center;
     }
     .service-content-field-icon {
