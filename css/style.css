@@ -35,9 +35,7 @@ header{
  width:50%;
  text-align: right;
 }
-.dropdown {
-    display:none;
-}
+
 .fa {
  color:#ffc000;
  /* margin-top: 68%; */
@@ -68,7 +66,7 @@ padding: 0% 0% 0% 5%;
 }
 .navbar-menu img{
     float: right;
-    margin-top: 1px;
+    margin-top: -1px;
 }
 .navbar-menu li a{
     text-decoration: none;
@@ -113,6 +111,9 @@ align-items: baseline;
     width: 20%;
     display: flex;
     justify-content: center;
+    height: 20%;
+    margin-top: 11%;
+
 }
 .construction-free-psd-content h2 {
     font-size: 3.9vw;
@@ -233,6 +234,7 @@ align-items: baseline;
 background-color: black;
 }
 
+
 /* T E M P L A T E --SECTION-- C S S */
 
 .service{
@@ -333,7 +335,7 @@ background-color: black;
 }
 .milestone-content:hover{
     scale:1.2;
-    line-height:7vh;
+    line-height:5vh;
     text-shadow: #a93030;
     text-shadow: 2px 2px black;
 }
@@ -470,6 +472,7 @@ cursor: pointer;
 }
 .hover-img:hover .overlay{
    opacity:0.7;
+   transition: 1s ease-in-out;
 }
 .gallery-card img{
     height: 50vh;
@@ -528,10 +531,12 @@ cursor: pointer;
 .team-member-card:hover .team-member-name h3{
     color:black;
     transition: 0.9s ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 16px;
 }
 .team-member:hover .team-member-social-media-icon {
     background-color: #75757500;
     transition: 0.9s ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .team-member-card-dp{
     height: 40%;
@@ -666,20 +671,25 @@ cursor: pointer;
 .world-news-construction-card:hover .news-card-img{
     translate: 0% -2%;
     scale:1.1;
+    border-radius: 10px;
 }
 .world-news-construction-card:hover .news-card-img-two{
     translate: 0% -2%;
     scale:1.1;
+    border-radius: 10px;
 }
 .world-news-construction-card:hover .news-card-img-three{
     translate: 0% -2%;
     scale:1.1;
+    border-radius: 10px;
 }
 .world-news-construction-card:hover .news-card-content {
     translate: 0% 2%;
     scale:0.9;
     background-color: #ffbf00db;
     color:black;
+    border-radius: 10px;
+
 }
  .world-news-construction-card:hover .read-more-section p{
     scale:1.3;
@@ -797,43 +807,98 @@ font-family: 'Ubuntu Mono', sans-serif;
     border-radius: 47px;
 }
 /* F O O T E R--SECTION--C S S  */
+.navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    border: 1px solid #cacaca;
+    display: none;
+}
+.navbar-mobile >div{
+ display: flex;
+ width: 100%;
+}
+.menu {
+    display: flex;
+    font-size: 1.05rem;
+    background-color: #fc4733;
+    display: none;
+}
+.logo {
+    width: 30%;
+    margin-top: 2%;
+}
+.nav-links {
+    width: 70%;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+.menu li a:hover {
+    scale:1.2;
+
+}
+.menu li {
+    padding: 15px 14px;
+    border-right: 1px solid #cacaca;
+}
+.hamburger {
+    display: none;
+    font-size: 1rem;
+    user-select: none;
+}
+input[type=checkbox] {
+    display: none;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+ }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 
 @media screen and (min-width: 350px)and (max-width:550px){
-    .dropbtn {
-        background-color: #4CAF50;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
+    .navbar-mobile {  
+        display: block;
     }
-    .dropdown {
-        position: relative;
+    .menu {
+     position: absolute;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 10% 0;
+     border-bottom-left-radius: 28%;
+     background-color: #2d3e50;
+     opacity: 0.8;
+     /* transition:width 3s; */
+    }
+    .menu li:hover {
         display: inline-block;
-    }
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }  
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+        scale:1.2;
+        transition: 0.8s ease;
     } 
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
+    .menu li+li {
+        margin-top: 12px;
     }
-    .dropdown:hover .dropdown-content {
+    input[type=checkbox]:checked~.menu {
+        transition: width 2s ease ;
         display: block;
     }
-    .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
-    }
+    .hamburger {
+        display: block;
+        text-align: end;
+        font-size: 6vw;
+    } 
+
+
+
     .header-contact-info {
         width: 100%;
         margin-left: 0%

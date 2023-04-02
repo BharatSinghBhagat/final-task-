@@ -10,23 +10,33 @@
 </head>
 <body>
     <div class="container">
-        <header >
+        <header>
             <div class="header-contact-info">
                     <div class="header-email-info"><img src="./image/email ico.png"><p>example@compan.com</p></div>
                     <div class="header-contact-num"><p>Call: &plus;9888 5554 5445 3334</p></div>
             </div>          
         </header>
-        <div class="dropdown">
-            <span class="orange-text">CONS</span>TRUCT
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-            <a href="#">HOME</a>
-            <a href="#">FEATRUES</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">SERVICE</a>
-            <a href="#">CONTACT US</a>
+        <nav class="navbar-mobile">
+            <div>
+                <div class="logo">
+                    <span class="orange-text">CONS</span>TRUCT
+                </div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                        <input type="checkbox" id="checkbox_toggle" />
+                        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                        <!-- NAVIGATION MENUS -->
+                        <div class="menu">
+                            <ul>                           <li class="home"><a href="#">HOME</a></li>
+                            <li><a href="#">FEATURED</a></li>
+                            <li><a href="#">PROJECT</a></li>
+                            <li><a href="#">SERVICE</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                        </div>
+                </ul>
             </div>
-        </div>
+        </nav>
         <div class="navbar">
             <div class="navbar-title"><span class="orange-text">CONS</span>TRUCT</div>
             <div class="navbar-menu">
@@ -39,7 +49,7 @@
                     <img src="./image/search icon.png">
                 </ul>
             </div>
-        </div>
+        </div>   
         <div class="construction-free-psd-parent">
               <div class="construction-free-psd-child">
                     <div class="construction-free-psd-btn">
@@ -60,8 +70,7 @@
                     </div>
               </div>
         </div>
-        <!-- yaha se bhaag raha -->
-        <div class="welcome-template">
+        <div class="welcome-template reveal">
             <div class="welcome-template-content">
                 <p class="our-offer">We offer</p>
                 <h3><span class="orange-text">Welcome</span> To Free Psd Construction Template</h3>
@@ -114,8 +123,7 @@
                    </div> 
             </div>
         </div> 
-        <!-- yaha se bhaag raha -->
-        <div class="service">
+        <div class="service reveal">
             <div class="service-image"></div>
             <div class="service-content">
                 <div class="service-content-field"><strong>Our Service</strong></div>
@@ -141,7 +149,7 @@
                 </div>
             </div>
         </div>  
-        <div class="milestone">
+        <div class="milestone reveal">
             <div class="milestone-section">
                 <div class="milestone-content">
                     <p>Completed Project</p>
@@ -161,7 +169,7 @@
                 </div>
             </div>
         </div>
-        <div class="offer">
+        <div class="offer reveal">
             <div class="offer-content">
                 <p class="our-offer">We offer</p>
                 <h3><span class="orange-text">What</span> We Are Offering</h3>
@@ -224,7 +232,7 @@
                 </div>
             </div>
         </div> 
-        <div class="gallery">
+        <div class="gallery reveal">
             <div class="gallery-content">
                 <p class="our-offer">We offer</p>
                 <h3><span class="orange-text">What</span> Our Projects Gallery</h3>
@@ -241,7 +249,8 @@
                     <img src="./image/bg team.png">
                     <div class="overlay">
                         <div class="content">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <p>bharat</p>
+                          </i>
                         </div>
                     </div>
                 </div>
@@ -273,7 +282,7 @@
                 
             </div>
         </div>
-        <div class="team-member">
+        <div class="team-member reveal">
             <div class="team-member-content">
                 <p class="our-offer">We offer</p>
                 <h3><span class="orange-text">Team</span> Members</h3>
@@ -324,7 +333,7 @@
                 </div>
             </div>
         </div>
-        <div class="client-testimonial">
+        <div class="client-testimonial reveal">
             <div class="client-testimonial-content">
                     <p class="our-offer">We offer</p>
                     <h3><span class="orange-text">Client</span> Testimonials</h3>
@@ -353,7 +362,7 @@
                 </div>
             </div>
         </div>
-        <div class="world-news-construction">
+        <div class="world-news-construction reveal">
             <div class="team-member-content">
                 <p class="our-offer">We offer</p>
                 <h3><span class="orange-text">World</span> News Construction</h3>
@@ -399,7 +408,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer reveal">
             <div class="footer-content">
                 <p>Don't miss out,Stay Updated</p>
                 <input type="mail" placeholder="Enter your email address">
@@ -413,5 +422,24 @@
             </div>
         </div>
     </div>
+    <script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+    </script>
 </body>
 </html>
